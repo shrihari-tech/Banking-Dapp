@@ -2,7 +2,7 @@ import React,{useContext} from "react";
 import {SiEthereum} from "react-icons/si";
 import Loader from "./Loader";
 import { TransactionContext } from "../context/TransactionContext";
-
+import { shortAddress } from "../utils/shortenAddress";
 // const Input=({placeholder,name,type,value,handleChange})=>(
 //     <input placeholder={placeholder}
 //     type={type}
@@ -53,7 +53,7 @@ const Welcome=()=>{
                                     </div>
                             </div>
                             <div className="text-white">
-                                 {currentAccount}
+                                 {shortAddress(currentAccount)}
                             </div>
                         </div>
                     </div>

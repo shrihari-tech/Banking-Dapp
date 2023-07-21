@@ -92,8 +92,8 @@ export const TransactionProvier=({children})=>{
             setTransactionCount(transactionCount.toNumber());
 
         }catch(error){
-            console.log(error);
-            throw new Error("No Ethereum");
+            //console.log(error);
+            //throw new Error("No Ethereum");
         }
     }
 
